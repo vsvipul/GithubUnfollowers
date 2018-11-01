@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Unfollowers for Github</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="tablefiles/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="tablefiles/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="tablefiles/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="tablefiles/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="tablefiles/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="tablefiles/util.css">
+	<link rel="stylesheet" type="text/css" href="tablefiles/main.css">
+<!--===============================================================================================-->
 </head>
 <body>
-	<p class="main">
-	Enter your github username:
-	</p>
-	<input type="text" name="user" id="user">
-	<a href="#" id="submit">Search</a>
-	<a href="#" id="other">other</a>
-	<div id="apidata" class="data"></div>
+	<div class="starter-template">
+        <h1>Unfollowers for Github</h1><br>
+        <p class="lead">A simple webapp to list all the people who you follow but they don't follow you back on Github.</p>
+	</div>
+	<form>
+		<div class="form-group text-center">
+			<input type="text" class="form-control col-lg-4" id="user" placeholder="Enter Github Username" autocomplete="off">
+			<small id="emailHelp" class="form-text text-muted">We'll never share your Github Username with anyone else.<br> Submit may take longer times for profiles with more followers.</small>
+			<button type="submit" id="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</form>
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100">
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column1">Username</th>
+								<th class="column2">Profile Link to Unfollow</th>
+							</tr>
+						</thead>
+						<tbody id="unfollowtable">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--===============================================================================================-->
+	<script src="tablefiles/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="tablefiles/popper.js"></script>
+	<script src="tablefiles/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="tablefiles/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="tablefiles/main.js"></script>
+
+	<script type="text/javascript" src="scripts.js"></script>
+
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="scripts.js"></script>
 </html>
