@@ -30,7 +30,7 @@ $('#submit').on('click',function(e){
 				unfollow.push(followingarr[i]);
 			}
 		}
-		console.log(unfollow);
+		$('#unfollowtable').empty();
 		var html = '';
 		for (var i=0 ; i<unfollow.length ; i++){
 			html+='<tr><td class="column1">' + unfollow[i].login + '</td><td class="column2"><a href="' + unfollow[i].html_url  +'" target="_blank">' + unfollow[i].html_url + '</a></td></tr>';
