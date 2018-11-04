@@ -1,12 +1,12 @@
 # GithubUnfollowers
 
-GithubUnfollowers is a JavaScript webapp. It gives an easy way to lists all those people who you don't follow you back on Github.
+GithubUnfollowers is a JavaScript webapp. It gives an easy way to list all those people who don't follow you back on Github.
 
 # Usage
 
 - Goto [this link](https://vsvipul.github.io/GithubUnfollowers/) to open the webapp.
 - Enter your Github Username in the text-box and hit Submit.
-- Wait for a few second as the table of unfollowers in generated.
+- Wait for a few seconds as the table of unfollowers in generated.
 - Unfollow those who you want to unfollow by tapping on their Github profile links and unfollowing on Github.
 
 # Contribute
