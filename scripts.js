@@ -1,9 +1,9 @@
 $('#submit').on('click', function(e) {
 	e.preventDefault();
 	var user = $('#user').val();
-	var requirel = 'https://api.github.com/users/' + user + '?access_token=5f3d562fe2b1d77fae2769d3b3a40341c5630628';
-	var followl = 'https://api.github.com/users/' + user + '/followers?access_token=5f3d562fe2b1d77fae2769d3b3a40341c5630628&per_page=100';
-	var followingl = 'https://api.github.com/users/' + user + '/following?access_token=5f3d562fe2b1d77fae2769d3b3a40341c5630628&per_page=100';
+	var requirel = 'https://api.github.com/users/' + user;
+	var followl = 'https://api.github.com/users/' + user + '/followers?per_page=100';
+	var followingl = 'https://api.github.com/users/' + user + '/following?per_page=100';
 	var followarr = [];
 	var followingarr = [];
 	var unfollow = [];
